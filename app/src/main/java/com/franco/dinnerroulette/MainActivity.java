@@ -94,15 +94,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupDefaultRestaurants(List<Restaurant> restaurants) {
         if(restaurants.size()<1){
-            restaurants.add( new Restaurant( "Papa Jhon's" ) );
-            restaurants.add( new Restaurant( "Taco Bell" ) );
-            restaurants.add( new Restaurant( "KFC" ) );
-            restaurants.add( new Restaurant( "Yokomo" ) );
-            restaurants.add( new Restaurant( "Green Bowl" ) );
-            restaurants.add( new Restaurant( "McDonnalds" ) );
-            restaurants.add( new Restaurant( "Wendy's" ) );
-            restaurants.add( new Restaurant( "Sbarro" ) );
+            restaurants.add( new Restaurant( "Papa Jhon's "+ getEmojiByUnicode(0x1F355)));
+            restaurants.add( new Restaurant( "Taco Bell " + getEmojiByUnicode(0x1F32E)));
+            restaurants.add( new Restaurant( "KFC " + getEmojiByUnicode(0x1F357)));
+            restaurants.add( new Restaurant( "Yokomo "+ getEmojiByUnicode(0x1F363)));
+            restaurants.add( new Restaurant( "Green Bowl "+ getEmojiByUnicode(0x1F32F)));
+            restaurants.add( new Restaurant( "McDonnalds "+ getEmojiByUnicode(0x1F354)));
+            restaurants.add( new Restaurant( "Wendy's " + getEmojiByUnicode(0x1F354)));
+            restaurants.add( new Restaurant( "Sbarro " + getEmojiByUnicode(0x1F355)));
         }
 
+
+    }
+
+    public String getEmojiByUnicode(int unicode){
+        return new String(Character.toChars(unicode));
     }
 }
