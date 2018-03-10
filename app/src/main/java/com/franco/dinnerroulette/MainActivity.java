@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         List<Restaurant> restaurants = new ArrayList<>();
         DinnerAdapter dinnerAdapter = new DinnerAdapter(this, restaurants);
 
+        setupDefaultRestaurants( restaurants );
+
         btnAdd.setOnClickListener( (View view) -> {
             final EditText input = new EditText(this);
             input.setInputType(InputType.TYPE_CLASS_TEXT);
@@ -88,5 +90,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+    }
+
+    private void setupDefaultRestaurants(List<Restaurant> restaurants) {
+        if(restaurants.size()<1){
+            restaurants.add( new Restaurant( "Papa Jhon's" ) );
+            restaurants.add( new Restaurant( "Taco Bell" ) );
+            restaurants.add( new Restaurant( "KFC" ) );
+            restaurants.add( new Restaurant( "Yokomo" ) );
+            restaurants.add( new Restaurant( "Green Bowl" ) );
+            restaurants.add( new Restaurant( "McDonnalds" ) );
+            restaurants.add( new Restaurant( "Wendy's" ) );
+            restaurants.add( new Restaurant( "Sbarro" ) );
+        }
+
     }
 }
