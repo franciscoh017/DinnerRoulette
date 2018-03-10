@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dinner Roulette</string>
+    <string name="spin">SPIN</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="pizza_slice">pizza slice</string>
+    <string name="add">Add</string>
+    <string name="generate">Generate</string>
+    <string name="list_item">List Item</string>
+    <string name="edit_button">Edit Button</string>
+    <string name="delete_button">Delete button</string>
+    <string name="spinning">Spinning</string>
+</resources>
